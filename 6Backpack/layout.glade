@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkWindow" id="window1">
+    <property name="width_request">500</property>
+    <property name="height_request">600</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Метод рюкзака</property>
+    <property name="window_position">center</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">217</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Суперзростаюча послідовність</property>
+          </object>
+          <packing>
+            <property name="x">24</property>
+            <property name="y">26</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">t</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+            <property name="y">109</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label3">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">t обернене</property>
+          </object>
+          <packing>
+            <property name="x">68</property>
+            <property name="y">181</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label4">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">b</property>
+          </object>
+          <packing>
+            <property name="x">69</property>
+            <property name="y">258</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="private-key">
+            <property name="width_request">166</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="text" translatable="yes">1 2 5 10 20 40 80 160</property>
+            <property name="input_purpose">alpha</property>
+          </object>
+          <packing>
+            <property name="x">295</property>
+            <property name="y">42</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="t">
+            <property name="width_request">166</property>
+            <property name="height_request">39</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="text" translatable="yes">13</property>
+            <property name="progress_pulse_step">0.089999999999999997</property>
+          </object>
+          <packing>
+            <property name="x">297</property>
+            <property name="y">124</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="t-inverted">
+            <property name="width_request">166</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="text" translatable="yes">37</property>
+            <property name="shadow_type">out</property>
+          </object>
+          <packing>
+            <property name="x">296</property>
+            <property name="y">199</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="b">
+            <property name="width_request">166</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="text" translatable="yes">480</property>
+          </object>
+          <packing>
+            <property name="x">297</property>
+            <property name="y">279</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button1">
+            <property name="label" translatable="yes">Зашифрувати</property>
+            <property name="width_request">133</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="encrypt" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">39</property>
+            <property name="y">431</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button2">
+            <property name="label" translatable="yes">Розшифрувати</property>
+            <property name="width_request">139</property>
+            <property name="height_request">38</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="decrypt" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">319</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow1">
+            <property name="width_request">417</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTextView" id="input">
+                <property name="width_request">417</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="wrap_mode">char</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">42</property>
+            <property name="y">337</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow2">
+            <property name="width_request">414</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTextView" id="result">
+                <property name="width_request">418</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="editable">False</property>
+                <property name="wrap_mode">char</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">43</property>
+            <property name="y">489</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
